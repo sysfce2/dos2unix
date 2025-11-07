@@ -1,3 +1,40 @@
+2025-10-15 Erwin Waterlander <waterlan@xs4all.nl>
+	* Makefile: Fix make dependencies for man pages generation.
+
+2025-10-14 Erwin Waterlander <waterlan@xs4all.nl>
+	* Version 7.5.3
+
+2025-10-14 Temuri Doghonadze <temuri.doghonadze@gmail.com>
+	* Updated Georgian translation of UI messages.
+
+2025-10-11 Erwin Waterlander <waterlan@xs4all.nl>
+	* Makefile, man/man1/Makefile: Update make dependencies
+	  for man pages generation.
+	* Makefile: Update location of CRT_glob.o for mingw.
+	* common.c: Fix: Exit with zero code when an unicode
+	  conversion error occurs in quiet mode.
+
+2025-10-10 Erwin Waterlander <waterlan@xs4all.nl>
+	* Fix: Exit with non-zero code if the conversion is aborted
+	  due to a binary file.
+	  Fixes https://sourceforge.net/p/dos2unix/bugs/21/
+
+2025-05-16 Erwin Waterlander <waterlan@xs4all.nl>
+	* common.c: Updated a few messages.
+	* man/man1/dos2unix.pod: dos2unix all lowercase.
+
+2025-03-29 Benno Schulenberg <vertaling@coevern.nl>
+	* po-man/nl.po: Updated Dutch translation of the manual.
+
+2025-03-18 Erwin Waterlander <waterlan@xs4all.nl>
+	* po-man/nl.po: Updated Dutch translation of the manual.
+
+2024-12-16 Мирослав Николић <miroslavnikolic@rocketmail.com>
+	* po-man/sr.po: Updated Serbian translation of the manual.
+
+2024-12-01 Yi-Jyun Pan <pan93412@gmail.com>
+	* po/zh_TW.po: Updated traditional Chinese translation.
+
 2024-10-09 Fabio Tomat <f.t.public@gmail.com>
 	* po/fur.po: Updated Friulian translation.
 

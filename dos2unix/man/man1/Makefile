@@ -3,7 +3,7 @@
 #   Copyright information
 #
 #       Copyright (C) 2010 Jari Aalto
-#       Copyright (C) 2010-2024 Erwin Waterlander
+#       Copyright (C) 2010-2025 Erwin Waterlander
 #
 #   License
 #
@@ -53,8 +53,6 @@ include ../../version.mk
 
 .PRECIOUS: %.pod
 
-.PHONY: pods
-
 # This variable *must* be set when calling
 PACKAGE         ?= dos2unix
 
@@ -71,16 +69,12 @@ MAN_OBJECTS = dos2unix.1 $(patsubst %.pod,%.1,$(PODFILES))
 
 MKDIR = mkdir
 
-all: pods $(MAN_OBJECTS)
-
+all: $(MAN_OBJECTS)
 
 # Create translated pod files from dos2unix.pod.
-pods:
+$(PODFILES) &: $(POFILES) dos2unix.pod
 	touch ../../po-man/dos2unix-man.pot
-	po4a --wrap-po no -k 70 --msgmerge-opt --no-wrap po4a.cfg
-	# Fix problem that =encoding is before =pod command.
-	#perl -ni.bak -e 'print unless /=encoding UTF-8/' $@
-	#perl -pli.bak -e 's/=pod/=pod\n\n=encoding UTF-8/' $@
+	po4a --wrap-po no -k 65 --msgmerge-opt --no-wrap po4a.cfg
 
 %.1 : %.pod
 	# make target - create manual page from a *.pod page
