@@ -2965,3 +2965,10 @@ wint_t d2u_putwc(wint_t wc, FILE *f, CFlag *ipFlag, const char *progname)
    return(wc);
 }
 #endif
+
+void logConverted(int RetVal, int verbose, const char *progname, unsigned int converted, int unsigned line_nr) {
+    if ((RetVal == 0) && (verbose > 1)) {
+      D2U_UTF8_FPRINTF(stderr, "%s: ", progname);
+      D2U_UTF8_FPRINTF(stderr, _("Converted %u out of %u line breaks.\n"),converted, line_nr -1);
+    }
+}
