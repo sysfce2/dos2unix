@@ -1,5 +1,5 @@
 /*
- *   Copyright (C) 2009-2016 Erwin Waterlander
+ *   Copyright (C) 2009-2026 Erwin Waterlander
  *   All rights reserved.
  *
  *   Redistribution and use in source and binary forms, with or without
@@ -320,5 +320,9 @@ int glob_warg(int argc, wchar_t *wargv[], char ***argv, CFlag *ipFlag, const cha
 #define D2U_ANSI_FPRINTF fprintf
 #endif
 void logConverted(int RetVal, int verbose, const char *progname, unsigned int converted, int unsigned line_nr);
+#ifdef D2U_UNICODE
+int binaryCharW(wint_t c);
+#endif
+int binaryChar(int c);
 
 #endif

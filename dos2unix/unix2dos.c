@@ -8,7 +8,7 @@
  *  See also https://www.freebsd.org/copyright/freebsd-license.html
  *  --------
  *
- *  Copyright (C) 2009-2025 Erwin Waterlander
+ *  Copyright (C) 2009-2026 Erwin Waterlander
  *  Copyright (C) 1994-1995 Benjamin Lin.
  *  All rights reserved.
  *
@@ -134,16 +134,11 @@ int unix2dosW(FILE* ipInF, FILE* ipOutF, CFlag *ipFlag, const char *progname) {
     unsigned int converted = 0;
 
     while ((TempChar = d2u_getwc(ipInF, ipFlag->bomtype)) != WEOF) {  /* get character */
-      if ((ipFlag->Force == 0) &&
-          (TempChar < 32) &&
-          (TempChar != 0x0a) &&  /* Not an LF */
-          (TempChar != 0x0d) &&  /* Not a CR */
-          (TempChar != 0x09) &&  /* Not a TAB */
-          (TempChar != 0x0c)) {  /* Not a form feed */
+      if ((ipFlag->Force == 0) && binaryCharW(TempChar)) {
         RetVal = -1;
         ipFlag->status |= BINARY_FILE ;
         if (ipFlag->verbose) {
-          ipFlag->error = 1;
+          if ((ipFlag->stdio_mode) && (!ipFlag->error)) ipFlag->error = 1;
           D2U_UTF8_FPRINTF(stderr, "%s: ", progname);
           D2U_UTF8_FPRINTF(stderr, _("Binary symbol 0x00%02X found at line %u\n"), TempChar, line_nr);
         }
@@ -190,7 +185,7 @@ int unix2dosW(FILE* ipInF, FILE* ipOutF, CFlag *ipFlag, const char *progname) {
     }
 
 
-    if (TempChar == WEOF && ipFlag->add_eol && PreviousChar != WEOF && PreviousChar != '\x0a') {
+    if (TempChar == WEOF && ipFlag->add_eol && PreviousChar != WEOF && PreviousChar != 0x0a) {
       /* Add missing line break at the last line. */
         if (ipFlag->verbose > 1) {
           D2U_UTF8_FPRINTF(stderr, "%s: ", progname);
@@ -219,16 +214,11 @@ int unix2macW(FILE* ipInF, FILE* ipOutF, CFlag *ipFlag, const char *progname) {
     unsigned int converted = 0;
 
     while ((TempChar = d2u_getwc(ipInF, ipFlag->bomtype)) != WEOF) {
-      if ((ipFlag->Force == 0) &&
-          (TempChar < 32) &&
-          (TempChar != 0x0a) &&  /* Not an LF */
-          (TempChar != 0x0d) &&  /* Not a CR */
-          (TempChar != 0x09) &&  /* Not a TAB */
-          (TempChar != 0x0c)) {  /* Not a form feed */
+      if ((ipFlag->Force == 0) && binaryCharW(TempChar)) {
         RetVal = -1;
         ipFlag->status |= BINARY_FILE ;
         if (ipFlag->verbose) {
-          ipFlag->error = 1;
+          if ((ipFlag->stdio_mode) && (!ipFlag->error)) ipFlag->error = 1;
           D2U_UTF8_FPRINTF(stderr, "%s: ", progname);
           D2U_UTF8_FPRINTF(stderr, _("Binary symbol 0x00%02X found at line %u\n"), TempChar, line_nr);
         }
@@ -340,16 +330,11 @@ int unix2dos(FILE* ipInF, FILE* ipOutF, CFlag *ipFlag, const char *progname, int
     unsigned int converted = 0;
 
     while ((TempChar = fgetc(ipInF)) != EOF) {  /* get character */
-      if ((ipFlag->Force == 0) &&
-          (TempChar < 32) &&
-          (TempChar != '\x0a') &&  /* Not an LF */
-          (TempChar != '\x0d') &&  /* Not a CR */
-          (TempChar != '\x09') &&  /* Not a TAB */
-          (TempChar != '\x0c')) {  /* Not a form feed */
+      if ((ipFlag->Force == 0) && binaryChar(TempChar)) {
         RetVal = -1;
         ipFlag->status |= BINARY_FILE ;
         if (ipFlag->verbose) {
-          ipFlag->error = 1;
+          if ((ipFlag->stdio_mode) && (!ipFlag->error)) ipFlag->error = 1;
           D2U_UTF8_FPRINTF(stderr, "%s: ", progname);
           D2U_UTF8_FPRINTF(stderr, _("Binary symbol 0x%02X found at line %u\n"), TempChar, line_nr);
         }
@@ -423,16 +408,11 @@ int unix2mac(FILE* ipInF, FILE* ipOutF, CFlag *ipFlag, const char *progname, int
     unsigned int converted = 0;
 
     while ((TempChar = fgetc(ipInF)) != EOF) {
-      if ((ipFlag->Force == 0) &&
-          (TempChar < 32) &&
-          (TempChar != '\x0a') &&  /* Not an LF */
-          (TempChar != '\x0d') &&  /* Not a CR */
-          (TempChar != '\x09') &&  /* Not a TAB */
-          (TempChar != '\x0c')) {  /* Not a form feed */
+      if ((ipFlag->Force == 0) && binaryChar(TempChar)) {
         RetVal = -1;
         ipFlag->status |= BINARY_FILE ;
         if (ipFlag->verbose) {
-          ipFlag->error = 1;
+          if ((ipFlag->stdio_mode) && (!ipFlag->error)) ipFlag->error = 1;
           D2U_UTF8_FPRINTF(stderr, "%s: ", progname);
           D2U_UTF8_FPRINTF(stderr, _("Binary symbol 0x%02X found at line %u\n"), TempChar, line_nr);
         }
