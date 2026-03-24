@@ -441,7 +441,7 @@ and group ownership of files.
 
 =item B<--no-add-eol>
 
-Do not add a line break to the last line if there isn't one.
+Do not add a line break to the last line if there isn't one (default).
 
 =item B<--no-error-binary>
 
