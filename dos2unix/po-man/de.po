@@ -1,13 +1,13 @@
 # German translation of the dos2unix man page.
 # Copyright (C) 2014 Erwin Waterlander (msgids)
 # This file is distributed under the same license as the dos2unix package.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2014-2017, 2022-2023, 2025.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2014-2017, 2022-2023, 2025-2026.
 # Roland Illig <roland.illig@gmx.de>, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-man-7.5.3-beta8\n"
-"POT-Creation-Date: 2026-03-23 22:38+0100\n"
-"PO-Revision-Date: 2025-05-18 15:19+0200\n"
+"Project-Id-Version: dos2unix-man-7.5.5-beta3\n"
+"POT-Creation-Date: 2026-03-23 22:44+0100\n"
+"PO-Revision-Date: 2026-03-26 17:39+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: =head1
@@ -358,12 +358,12 @@ msgstr "Einer Datei, die aus dem DOS- ins Unix-Format umgewandelt wurde, kann ei
 #. type: =item
 #: dos2unix.pod:252
 msgid "B<--error-binary>"
-msgstr ""
+msgstr "B<--error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:254
 msgid "Return an error if a binary file is skipped."
-msgstr ""
+msgstr "liefert einen Fehler zurück, wenn eine Binärdatei übersprungen wird."
 
 #. type: =item
 #: dos2unix.pod:256
@@ -802,20 +802,18 @@ msgstr "B<--no-add-eol>"
 
 #. type: textblock
 #: dos2unix.pod:444
-#, fuzzy
-#| msgid "Do not add a line break to the last line if there isn't one."
 msgid "Do not add a line break to the last line if there isn't one (default)."
-msgstr "fügt keinen Zeilenumbruch nach der letzten Zeile hinzu, falls ein solcher nicht existiert."
+msgstr "fügt keinen Zeilenumbruch nach der letzten Zeile hinzu, falls ein solcher nicht existiert (Vorgabe)."
 
 #. type: =item
 #: dos2unix.pod:446
 msgid "B<--no-error-binary>"
-msgstr ""
+msgstr "B<--no-error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:448
 msgid "Do not return an error if a binary file is skipped (default)."
-msgstr ""
+msgstr "liefert keinen Fehler zurück, wenn eine Binärdatei übersprungen wird (Vorgabe)."
 
 #. type: =item
 #: dos2unix.pod:450
@@ -892,10 +890,11 @@ msgstr ""
 "    dos2unix -n foo.txt foo.txt\n"
 "\n"
 
+# FIXME C<--allow-chown> → B<--allow-chown>
 #. type: textblock
 #: dos2unix.pod:493
 msgid "The advantage of the C<--allow-chown> option is that you can use wildcards, and the ownership properties will be preserved when possible."
-msgstr "Der Vorteil der Option C<--allow-chown> ist, dass Sie Platzhalter verwenden können und die Eigentumsverhältnisse bewahrt bleiben, sofern möglich."
+msgstr "Der Vorteil der Option B<--allow-chown> ist, dass Sie Platzhalter verwenden können und die Eigentumsverhältnisse bewahrt bleiben, sofern möglich."
 
 #. type: =item
 #: dos2unix.pod:496
@@ -905,7 +904,7 @@ msgstr "B<-q, --quiet>"
 #. type: textblock
 #: dos2unix.pod:498
 msgid "Quiet mode. Suppress all warnings and messages. The return value is zero.  Except when wrong command-line options are used."
-msgstr "Stiller Modus, in dem alle Warnungen und sonstige Meldungen unterdrückt werden. Der Rückgabewert ist 0, außer wenn fehlerhafte Befehlszeilenoptionen angegeben werden."
+msgstr "aktiviert den stillen Modus, in dem alle Warnungen und sonstigen Meldungen unterdrückt werden. Der Rückgabewert ist 0, außer wenn fehlerhafte Befehlszeilenoptionen angegeben werden."
 
 #. type: =item
 #: dos2unix.pod:501
@@ -935,7 +934,7 @@ msgstr "Binärdateien werden übersprungen, damit unerwünschtes Fehlverhalten v
 #. type: textblock
 #: dos2unix.pod:517
 msgid "By default, no error is returned when a binary file is skipped. When the C<--error-binary> option is used, an error is returned."
-msgstr ""
+msgstr "Standardmäßig wird kein Fehler zurückgeliefert, wenn eine Binärdatei übersprungen wird. Bei Verwendung der Option B<--error-binary> wird ein Fehler zurückgeliefert."
 
 #. type: =item
 #: dos2unix.pod:520

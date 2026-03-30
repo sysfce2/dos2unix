@@ -1,12 +1,12 @@
 # Messages français pour dos2unix-man.
-# Copyright (C) 2025 Erwin Waterlander (msgids)
+# Copyright (C) 2026 Erwin Waterlander (msgids)
 # This file is distributed under the same license as the dos2unix package.
-# Frédéric Marchal <fmarchal@perso.be>, 2025.
+# Frédéric Marchal <fmarchal@perso.be>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-man-7.5.3-beta8\n"
-"POT-Creation-Date: 2026-03-23 22:38+0100\n"
-"PO-Revision-Date: 2025-05-17 12:00+0200\n"
+"Project-Id-Version: dos2unix-man-7.5.5-beta3\n"
+"POT-Creation-Date: 2026-03-23 22:44+0100\n"
+"PO-Revision-Date: 2026-03-26 15:56+0100\n"
 "Last-Translator: Frédéric Marchal <fmarchal@perso.be>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -356,12 +356,12 @@ msgstr "Un fichier converti de DOS vers le format Unix peut ne pas avoir de saut
 #. type: =item
 #: dos2unix.pod:252
 msgid "B<--error-binary>"
-msgstr ""
+msgstr "B<--error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:254
 msgid "Return an error if a binary file is skipped."
-msgstr ""
+msgstr "Retourner une erreur si un fichier binaire est ignoré."
 
 #. type: =item
 #: dos2unix.pod:256
@@ -800,20 +800,18 @@ msgstr "B<--no-add-eol>"
 
 #. type: textblock
 #: dos2unix.pod:444
-#, fuzzy
-#| msgid "Do not add a line break to the last line if there isn't one."
 msgid "Do not add a line break to the last line if there isn't one (default)."
-msgstr "N'ajoute pas de saut de ligne à la dernière ligne s'il n'y en a pas."
+msgstr "N'ajoute pas de saut de ligne à la dernière ligne s'il n'y en a pas (par défaut)."
 
 #. type: =item
 #: dos2unix.pod:446
 msgid "B<--no-error-binary>"
-msgstr ""
+msgstr "B<--no-error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:448
 msgid "Do not return an error if a binary file is skipped (default)."
-msgstr ""
+msgstr "Ne pas retourner une erreur si un fichier binaire est ignoré (par défaut)."
 
 #. type: =item
 #: dos2unix.pod:450
@@ -933,7 +931,7 @@ msgstr "Ignorer les fichiers binaires sert à éviter les erreurs accidentelles.
 #. type: textblock
 #: dos2unix.pod:517
 msgid "By default, no error is returned when a binary file is skipped. When the C<--error-binary> option is used, an error is returned."
-msgstr ""
+msgstr "Par défaut, aucune erreur n'est retournée quand un fichier binaire est ignoré. Si l'option C<--error-binary> est utilisée, une erreur est retournée."
 
 #. type: =item
 #: dos2unix.pod:520

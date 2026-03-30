@@ -3,13 +3,13 @@
 # Copyright (C) 2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the dos2unix package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2020, 2023, 2025.
+# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2020, 2023, 2025, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix 7.5.3-beta8\n"
+"Project-Id-Version: dos2unix 7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-15 21:19+0100\n"
-"PO-Revision-Date: 2025-05-17 16:54+0300\n"
+"POT-Creation-Date: 2026-03-23 22:45+0100\n"
+"PO-Revision-Date: 2026-03-26 13:08+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -209,7 +209,7 @@ msgstr " -e, --add-eol         додати розрив рядка до ост�
 
 #: common.c:672
 msgid " --error-binary        return an error when a binary file is skipped\n"
-msgstr ""
+msgstr " --error-binary        повернути помилку, якщо пропущено двійковий файл\n"
 
 #: common.c:673
 msgid " -f, --force           force conversion of binary files\n"
@@ -267,7 +267,7 @@ msgstr " --no-add-eol          не додавати розрив рядка д�
 
 #: common.c:693
 msgid " --no-error-binary     don't return an error when a binary file is skipped (default)\n"
-msgstr ""
+msgstr " --no-error-binary     не повертати помилку, якщо пропущено двійковий файл (типово)\n"
 
 #: common.c:694
 msgid " -O, --to-stdout       write to standard output\n"

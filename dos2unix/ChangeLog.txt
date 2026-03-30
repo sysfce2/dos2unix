@@ -1,6 +1,6 @@
 2026-03-15 Erwin Waterlander <waterlan@xs4all.nl>
 	* Fixed dos2unix error on empty input.
-	  The problem was created in 7.5.4.
+	  The problem was introduced in version 7.5.4.
 	  Fixes https://sourceforge.net/p/dos2unix/bugs/22/
 	  Thanks to quyse.
 

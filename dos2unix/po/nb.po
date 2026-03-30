@@ -2,14 +2,14 @@
 # Copyright (C) 2015 Erwin Waterlander (msgids)
 # This file is distributed under the same license as the dos2unix package.
 # Åka Sikrom <a4@hush.com>, 2015-2017.
-# Johnny A. Solbu <johnny@solbu.net>, 2023-2024
+# Johnny A. Solbu <johnny@solbu.net>, 2023-2026
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-7.5.2-beta2\n"
+"Project-Id-Version: dos2unix-7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-15 21:19+0100\n"
-"PO-Revision-Date: 2024-01-06 16:38+0100\n"
+"POT-Creation-Date: 2026-03-23 22:45+0100\n"
+"PO-Revision-Date: 2026-03-26 12:40+0100\n"
 "Last-Translator: Johnny A. Solbu <johnny@solbu.net>\n"
 "Language-Team: Norwegian Bokmaal <l10n-no@lister.huftis.org>\n"
 "Language: nb\n"
@@ -201,7 +201,7 @@ msgstr " -e, --add-eol         legg til et linjeskift på den siste linjen hvis 
 
 #: common.c:672
 msgid " --error-binary        return an error when a binary file is skipped\n"
-msgstr ""
+msgstr " --no-error-binary        returner en feil når en binærfil hoppes over (standard)\n"
 
 #: common.c:673
 msgid " -f, --force           force conversion of binary files\n"
@@ -259,7 +259,7 @@ msgstr " --no-add-eol          ikke legg til et linjeskift på den siste linjen 
 
 #: common.c:693
 msgid " --no-error-binary     don't return an error when a binary file is skipped (default)\n"
-msgstr ""
+msgstr " --no-error-binary        ikke returner en feil når en binærfil hoppes over (standard)\n"
 
 #: common.c:694
 msgid " -O, --to-stdout       write to standard output\n"
@@ -326,19 +326,16 @@ msgid " -V, --version         display version number\n"
 msgstr " -V, --version         vis versjonsnummer\n"
 
 #: common.c:729
-#, fuzzy
 msgid "DOS 16 bit version (Watcom C).\n"
-msgstr "DOS 16-bit-versjon (WATCOMC).\n"
+msgstr "DOS 16-bit-versjon (Watcom C).\n"
 
 #: common.c:731
-#, fuzzy
 msgid "DOS 16 bit version (Turbo C).\n"
-msgstr "DOS 16-bit-versjon (TURBOC).\n"
+msgstr "DOS 16-bit-versjon (Turbo C).\n"
 
 #: common.c:733
-#, fuzzy
 msgid "DOS 32 bit version (Watcom C).\n"
-msgstr "DOS 32-bit-versjon (WATCOMC).\n"
+msgstr "DOS 32-bit-versjon (Watcom C).\n"
 
 #: common.c:735
 msgid "DOS 32 bit version (DJGPP).\n"
@@ -357,9 +354,8 @@ msgid "Windows 64 bit version (MinGW-w64).\n"
 msgstr "Windows 64-bit-versjon (MinGW-w64).\n"
 
 #: common.c:743
-#, fuzzy
 msgid "Windows 32 bit version (Watcom C).\n"
-msgstr "Windows 32-bit-versjon (WATCOMC).\n"
+msgstr "Windows 32-bit-versjon (Watcom C).\n"
 
 #: common.c:745
 msgid "Windows 32 bit version (MinGW-w64).\n"
@@ -380,9 +376,8 @@ msgid "Windows 32 bit version (MSVC %d).\n"
 msgstr "Windows 32-bit-versjon (MSVC %d).\n"
 
 #: common.c:753
-#, fuzzy
 msgid "OS/2 version (Watcom C).\n"
-msgstr "OS/2-versjon (WATCOMC).\n"
+msgstr "OS/2-versjon (Watcom C).\n"
 
 #: common.c:755
 msgid "OS/2 version (EMX).\n"

@@ -1,13 +1,13 @@
 # Polish translation for dos2unix.
 # This file is distributed under the same license as the dos2unix package.
-# Jakub Bogusz <qboosh@pld-linux.org>, 2014-2025.
+# Jakub Bogusz <qboosh@pld-linux.org>, 2014-2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix 7.5.3-beta8\n"
+"Project-Id-Version: dos2unix 7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-15 21:19+0100\n"
-"PO-Revision-Date: 2025-05-17 21:15+0200\n"
+"POT-Creation-Date: 2026-03-23 22:45+0100\n"
+"PO-Revision-Date: 2026-03-26 19:45+0100\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
@@ -198,7 +198,7 @@ msgstr " -e, --add-eol         dodawanie brakującego znaku końca linii do osta
 
 #: common.c:672
 msgid " --error-binary        return an error when a binary file is skipped\n"
-msgstr ""
+msgstr " --error-binary        zwrócenie błędu przy pominięciu pliku binarnego\n"
 
 #: common.c:673
 msgid " -f, --force           force conversion of binary files\n"
@@ -256,7 +256,7 @@ msgstr " --no-add-eol          bez dodawania brakującego znaku końca do ostatn
 
 #: common.c:693
 msgid " --no-error-binary     don't return an error when a binary file is skipped (default)\n"
-msgstr ""
+msgstr " --no-error-binary     bez zwracania błędu przy pominięciu pliku binarnego (domyślne)\n"
 
 #: common.c:694
 msgid " -O, --to-stdout       write to standard output\n"

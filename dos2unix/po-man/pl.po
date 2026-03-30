@@ -1,12 +1,12 @@
 # Polish translation for dos2unix man.
 # This file is distributed under the same license as the dos2unix package.
-# Jakub Bogusz <qboosh@pld-linux.org>, 2014-2025.
+# Jakub Bogusz <qboosh@pld-linux.org>, 2014-2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-man 7.5.3-beta8\n"
-"POT-Creation-Date: 2026-03-23 22:38+0100\n"
-"PO-Revision-Date: 2025-05-17 21:25+0200\n"
+"Project-Id-Version: dos2unix-man 7.5.5-beta3\n"
+"POT-Creation-Date: 2026-03-23 22:44+0100\n"
+"PO-Revision-Date: 2026-03-26 20:00+0100\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
@@ -355,12 +355,12 @@ msgstr "Pliki przekształcone z formatu DOS do Uniksa mogą nie mieć w ostatnim
 #. type: =item
 #: dos2unix.pod:252
 msgid "B<--error-binary>"
-msgstr ""
+msgstr "B<--error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:254
 msgid "Return an error if a binary file is skipped."
-msgstr ""
+msgstr "Zwrócenie błędu, jeśli pominięto plik binarny."
 
 #. type: =item
 #: dos2unix.pod:256
@@ -798,20 +798,18 @@ msgstr "B<--no-add-eol>"
 
 #. type: textblock
 #: dos2unix.pod:444
-#, fuzzy
-#| msgid "Do not add a line break to the last line if there isn't one."
 msgid "Do not add a line break to the last line if there isn't one (default)."
-msgstr "Bez dodawania znaku końca linii do ostatniego wiersza, jeśli ten go nie zawiera."
+msgstr "Bez dodawania znaku końca linii do ostatniego wiersza, jeśli ten go nie zawiera (domyślne)."
 
 #. type: =item
 #: dos2unix.pod:446
 msgid "B<--no-error-binary>"
-msgstr ""
+msgstr "B<--no-error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:448
 msgid "Do not return an error if a binary file is skipped (default)."
-msgstr ""
+msgstr "Bez zwracania błędu, jeśli pominięto plik binarny (domyślne)."
 
 #. type: =item
 #: dos2unix.pod:450
@@ -851,7 +849,7 @@ msgstr "Tryb starego pliku. Konwersja PLIKU i nadpisanie go wyjściem. Program d
 #. type: textblock
 #: dos2unix.pod:466
 msgid "In old file (in-place) mode the converted file gets the same owner, group, and read/write permissions as the original file. Also when the file is converted by another user who has write permissions on the file (e.g. user root).  The conversion will be aborted when it is not possible to preserve the original values.  Change of owner could mean that the original owner is not able to read the file any more. Change of group could be a security risk, the file could be made readable for persons for whom it is not intended.  Preservation of owner, group, and read/write permissions is only supported on Unix."
-msgstr "W trybie starego pliku (w miejscu) przekonwertowany plik otrzymuje tego samego właściciela, grupę oraz prawa odczytu/zapisu, jak plik oryginalny - także wtedy, gdy plik jest konwertowany przez innego użytkownika, mającego prawo zapisu do pliku (np. przez użytkownika root). Konwersja zostanie przerwana, jeśli nie będzie możliwe zachowanie oryginalnych wartości. Zmiana właściciela mogłaby oznaczać, że pierwotny właściciel nie może już odczytać pliku. Zmiana grupy mogłaby być zagrożeniem bezpieczeństwa, plik mógłby być czytelny dla nie zamierzonych osób. Zachowanie właściciela, grupy i praw odczytu/zapisu jest obsługiwane tylko na Uniksie."
+msgstr "W trybie starego pliku (w miejscu) przekonwertowany plik otrzymuje tego samego właściciela, grupę oraz prawa odczytu/zapisu, jak plik oryginalny - także wtedy, gdy plik jest konwertowany przez innego użytkownika, mającego prawo zapisu do pliku (np. przez użytkownika root). Konwersja zostanie przerwana, jeśli nie będzie możliwe zachowanie oryginalnych wartości. Zmiana właściciela mogłaby oznaczać, że pierwotny właściciel nie może już odczytać pliku. Zmiana grupy mogłaby być zagrożeniem bezpieczeństwa, plik mógłby być czytelny dla niezamierzonych osób. Zachowanie właściciela, grupy i praw odczytu/zapisu jest obsługiwane tylko na Uniksie."
 
 #. type: textblock
 #: dos2unix.pod:475
@@ -931,7 +929,7 @@ msgstr "Pomijanie plików binarnych ma na celu zapobieżenie przypadkowym błęd
 #. type: textblock
 #: dos2unix.pod:517
 msgid "By default, no error is returned when a binary file is skipped. When the C<--error-binary> option is used, an error is returned."
-msgstr ""
+msgstr "Domyślnie nie jest zwacany błąd, kiedy zostaje pominięty plik binarny. Jeśli użyta zostanie opcja C<--error-binary>, błąd jest zwracany."
 
 #. type: =item
 #: dos2unix.pod:520
@@ -1091,7 +1089,7 @@ msgstr "B<iso>"
 #. type: textblock
 #: dos2unix.pod:606
 msgid "Characters are converted between a DOS character set (code page) and ISO character set ISO-8859-1 (Latin-1) on Unix. DOS characters without ISO-8859-1 equivalent, for which conversion is not possible, are converted to a dot. The same counts for ISO-8859-1 characters without DOS counterpart."
-msgstr "W tym trybie znaki są konwertowane między zestawem znaków DOS (stroną kodową) a zestawem znaków ISO-8859-1 (Latin-1) używanym na Uniksie. Znaki DOS-owe nie mające odpowiednika w ISO-8859-1, których nie da się przekonwertować, są zamieniane na kropkę. To samo dotyczy znaków ISO-8859-1 bez odpowiednika w DOS-ie."
+msgstr "W tym trybie znaki są konwertowane między zestawem znaków DOS (stroną kodową) a zestawem znaków ISO-8859-1 (Latin-1) używanym na Uniksie. Znaki DOS-owe niemające odpowiednika w ISO-8859-1, których nie da się przekonwertować, są zamieniane na kropkę. To samo dotyczy znaków ISO-8859-1 bez odpowiednika w DOS-ie."
 
 #. type: textblock
 #: dos2unix.pod:611

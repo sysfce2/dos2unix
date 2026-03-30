@@ -1,9 +1,9 @@
 # Translation of the dos2unix-man to Romanian.
 # Mesajele în limba română pentru pachetul dos2unix-man
-# Copyright © 2022, 2023, 2025 Erwin Waterlander (msgids)
+# Copyright © 2022, 2023, 2025, 2026 Erwin Waterlander (msgids)
 # This file is distributed under the same license as the dos2unix package.
 #
-# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2022 - 2023.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2022, 2023, 2025, 2026.
 #
 # Cronologia traducerii fișierului „dos2unix-man”:
 # Traducerea inițială, făcută de R-GC, pentru versiunea dos2unix 7.3.6-beta4, oct-2022.
@@ -12,14 +12,15 @@
 # Traducerea inițială, făcută de R-GC, pentru versiunea dos2unix 7.5.2-beta2, noi-2023.
 # Traducerea inițială, făcută de R-GC, pentru versiunea dos2unix 7.5.2-beta3, noi-2023.
 # Traducerea inițială, făcută de R-GC, pentru versiunea dos2unix 7.5.3-beta8, mai-2025.
+# Traducerea inițială, făcută de R-GC, pentru versiunea dos2unix 7.5.5-beta3, mar-2026.
 # Actualizare a traducerii pentru versiunea Y, făcută de X,Y(luna-anul).
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-man 7.5.3-beta8\n"
+"Project-Id-Version: dos2unix-man 7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 22:38+0100\n"
-"PO-Revision-Date: 2025-05-17 13:39+0200\n"
+"POT-Creation-Date: 2026-03-23 22:44+0100\n"
+"PO-Revision-Date: 2026-03-26 14:29+0100\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -28,7 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || ((n%100) > 0 && (n%100) < 20)) ? 1 : 2);\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 
 #. type: =head1
 #: dos2unix.pod:52
@@ -43,7 +44,7 @@ msgstr "dos2unix - Convertor de format de fișier text din DOS/Mac în Unix și 
 #. type: =head1
 #: dos2unix.pod:56
 msgid "SYNOPSIS"
-msgstr "REZUMAT"
+msgstr "SINOPSIS"
 
 #. type: verbatim
 #: dos2unix.pod:58
@@ -378,12 +379,12 @@ msgstr "Un fișier convertit din formatul DOS în formatul Unix poate să nu aib
 #. type: =item
 #: dos2unix.pod:252
 msgid "B<--error-binary>"
-msgstr ""
+msgstr "B<--error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:254
 msgid "Return an error if a binary file is skipped."
-msgstr ""
+msgstr "Returnează o eroare atunci când un fișier binar este omis."
 
 #. type: =item
 #: dos2unix.pod:256
@@ -825,20 +826,18 @@ msgstr "B<--no-add-eol>"
 
 #. type: textblock
 #: dos2unix.pod:444
-#, fuzzy
-#| msgid "Do not add a line break to the last line if there isn't one."
 msgid "Do not add a line break to the last line if there isn't one (default)."
-msgstr "Nu adaugă o întrerupere de linie la ultima linie, dacă nu există una."
+msgstr "Nu adaugă o întrerupere de linie la ultima linie, dacă nu există una (implicit)."
 
 #. type: =item
 #: dos2unix.pod:446
 msgid "B<--no-error-binary>"
-msgstr ""
+msgstr "B<--no-error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:448
 msgid "Do not return an error if a binary file is skipped (default)."
-msgstr ""
+msgstr "Nu returnează o eroare atunci când un fișier binar este omis (implicit)."
 
 #. type: =item
 #: dos2unix.pod:450
@@ -958,7 +957,7 @@ msgstr "Omiterea fișierelor binare se face pentru a evita greșelile accidental
 #. type: textblock
 #: dos2unix.pod:517
 msgid "By default, no error is returned when a binary file is skipped. When the C<--error-binary> option is used, an error is returned."
-msgstr ""
+msgstr "În mod implicit, nu se returnează nicio eroare atunci când un fișier binar este omis. Atunci când se utilizează opțiunea C<--error-binary>, se returnează o eroare."
 
 #. type: =item
 #: dos2unix.pod:520

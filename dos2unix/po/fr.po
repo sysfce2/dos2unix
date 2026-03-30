@@ -1,13 +1,13 @@
 # Message français pour dos2unix.
-# Copyright (C) 2025 Erwin Waterlander (msgids)
+# Copyright (C) 2026 Erwin Waterlander (msgids)
 # This file is distributed under the same license as the dos2unix package.
-# Frédéric Marchal <fmarchal@perso.be>, 2025.
+# Frédéric Marchal <fmarchal@perso.be>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-7.5.3-beta8\n"
+"Project-Id-Version: dos2unix-7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-15 21:19+0100\n"
-"PO-Revision-Date: 2025-05-17 11:54+0200\n"
+"POT-Creation-Date: 2026-03-23 22:45+0100\n"
+"PO-Revision-Date: 2026-03-26 15:53+0100\n"
 "Last-Translator: Frédéric Marchal <fmarchal@perso.be>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -197,7 +197,7 @@ msgstr " -e, --add-eol         ajoute un saut de ligne à la dernière ligne s'i
 
 #: common.c:672
 msgid " --error-binary        return an error when a binary file is skipped\n"
-msgstr ""
+msgstr " --error-binary        retourner une erreur quand un fichier binaire est ignoré\n"
 
 #: common.c:673
 msgid " -f, --force           force conversion of binary files\n"
@@ -255,7 +255,7 @@ msgstr " --no-add-eol          n'ajoute pas de saut de ligne à la dernière lig
 
 #: common.c:693
 msgid " --no-error-binary     don't return an error when a binary file is skipped (default)\n"
-msgstr ""
+msgstr " --no-error-binary     ne pas retourner une erreur si un fichier binaire est ignoré (par défaut)\n"
 
 #: common.c:694
 msgid " -O, --to-stdout       write to standard output\n"
