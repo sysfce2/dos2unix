@@ -1,15 +1,15 @@
 # Brazilian Portuguese translation for dos2unix-man
-# Copyright (c) 2025 Erwin Waterlander (msgids)
-# Copyright (C) 2025 Free Software Foundation, Inc.
+# Copyright (c) 2026 Erwin Waterlander (msgids)
+# Copyright (C) 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the dos2unix package.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2025.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix-man 7.5.3-beta8\n"
+"Project-Id-Version: dos2unix-man 7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 22:38+0100\n"
-"PO-Revision-Date: 2025-05-19 15:59-0300\n"
+"POT-Creation-Date: 2026-03-23 22:44+0100\n"
+"PO-Revision-Date: 2026-03-29 21:28-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge.net>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 48.0\n"
+"X-Generator: Gtranslator 50.0\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #. type: =head1
@@ -85,7 +85,7 @@ msgstr "Ligações simbólicas e seus alvos são por padrão mantidas intocávei
 #. type: textblock
 #: dos2unix.pod:84
 msgid "dos2unix was modelled after dos2unix under SunOS/Solaris.  There is one important difference with the original SunOS/Solaris version. This version does by default in-place conversion (old file mode), while the original SunOS/Solaris version only supports paired conversion (new file mode). See also options C<-o> and C<-n>. Another difference is that the SunOS/Solaris version uses by default I<iso> mode conversion while this version uses by default I<ascii> mode conversion."
-msgstr "O dos2unix foi modelado seguindo dos2unix do SunOS/Solaris. Há uma diferença importante em relação à versão original do SunOS/Solaris. Essa versão faz conversão no-lugar (modo de arquivo antigo) por padrão, enquanto a versão original do SunOS/Solaris fornecia suporte apenas a conversão pareada (modo de novo arquivo). Veja também as opções C<-o> e C<-n>. Uma outra diferença é que a versão SunOS/Solaris usa, por padrão, a conversão de modo do I<iso> enquanto esta versão usa o do I<ascii>."
+msgstr "O dos2unix foi modelado seguindo dos2unix do SunOS/Solaris. Há uma diferença importante em relação à versão original do SunOS/Solaris. Por padrão, essa versão faz conversão no-lugar (modo de arquivo antigo), enquanto a versão original do SunOS/Solaris fornecia suporte apenas a conversão pareada (modo de novo arquivo). Veja também as opções C<-o> e C<-n>. Uma outra diferença é que a versão do SunOS/Solaris usa, por padrão, a conversão de modo do I<iso> enquanto esta versão usa o do I<ascii>."
 
 #. type: =head1
 #: dos2unix.pod:92
@@ -360,12 +360,12 @@ msgstr "Um arquivo convertido do formato DOS para Unix pode não ter uma quebra 
 #. type: =item
 #: dos2unix.pod:252
 msgid "B<--error-binary>"
-msgstr ""
+msgstr "B<--error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:254
 msgid "Return an error if a binary file is skipped."
-msgstr ""
+msgstr "Retorna um erro se um arquivo binário for ignorado."
 
 #. type: =item
 #: dos2unix.pod:256
@@ -804,20 +804,18 @@ msgstr "B<--no-add-eol>"
 
 #. type: textblock
 #: dos2unix.pod:444
-#, fuzzy
-#| msgid "Do not add a line break to the last line if there isn't one."
 msgid "Do not add a line break to the last line if there isn't one (default)."
-msgstr "Não adiciona uma quebra de linha à última linha se não houver uma."
+msgstr "Não adiciona uma quebra de linha à última linha se não houver uma (padrão)."
 
 #. type: =item
 #: dos2unix.pod:446
 msgid "B<--no-error-binary>"
-msgstr ""
+msgstr "B<--no-error-binary>"
 
 #. type: textblock
 #: dos2unix.pod:448
 msgid "Do not return an error if a binary file is skipped (default)."
-msgstr ""
+msgstr "Não retorna um erro se um arquivo binário é ignorado (padrão)."
 
 #. type: =item
 #: dos2unix.pod:450
@@ -937,7 +935,7 @@ msgstr "A ação de ignorar arquivos binários é feita para evitar equívocos a
 #. type: textblock
 #: dos2unix.pod:517
 msgid "By default, no error is returned when a binary file is skipped. When the C<--error-binary> option is used, an error is returned."
-msgstr ""
+msgstr "Por padrão, não é retornado nenhum erro quando um arquivo binário é ignorado. Quando a opção C <--error-binary> é usada, é retornado um erro."
 
 #. type: =item
 #: dos2unix.pod:520

@@ -1,25 +1,25 @@
 # Brazilian Portuguese Translation for dos2unix.
-# Copyright (C) 2025 Erwin Waterlander (msgids)
-# Copyright (C) 2025 Free Software Foundation, Inc.
+# Copyright (C) 2026 Erwin Waterlander (msgids)
+# Copyright (C) 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the dos2unix package.
 # Enrico Nicoletto <liverig@gmail.com>, 2014.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2014-2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dos2unix 7.5.3-beta8\n"
+"Project-Id-Version: dos2unix 7.5.5-beta3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-15 21:19+0100\n"
-"PO-Revision-Date: 2025-05-19 15:51-0300\n"
+"POT-Creation-Date: 2026-03-23 22:45+0100\n"
+"PO-Revision-Date: 2026-03-26 20:23-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge.net>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 48.0\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Gtranslator 50.0\n"
 
 #: dos2unix.c:79
 #, c-format
@@ -205,7 +205,7 @@ msgstr ""
 
 #: common.c:672
 msgid " --error-binary        return an error when a binary file is skipped\n"
-msgstr ""
+msgstr " --error-binary        retorna um erro quando um arquivo binário é ignorado\n"
 
 #: common.c:673
 msgid " -f, --force           force conversion of binary files\n"
@@ -266,6 +266,8 @@ msgstr ""
 #: common.c:693
 msgid " --no-error-binary     don't return an error when a binary file is skipped (default)\n"
 msgstr ""
+" --no-error-binary     não retorna um erro quando um arquivo binário\n"
+"                       é ignorado (padrão)\n"
 
 #: common.c:694
 msgid " -O, --to-stdout       write to standard output\n"
