@@ -204,6 +204,7 @@ ACKNOWLEDGEMENTS
         Dimitry Andric        Aligned Dutch help text.
         Joao ERIBERTO Mota Filho  Reported dos2unix exits with zero code when it
                               aborts conversion due to a binary file.
+        quyse                 Reported problem with empty input.
 
 
 FINDUTILS
