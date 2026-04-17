@@ -329,9 +329,22 @@ DOS PORT, 32 BIT
         make -f djgpp.mak strip
         make -f djgpp.mak install
 
+
+    If you want to build dos2unix with native language support (NLS) for DOS,
+    run DJGPP on a DOS version that supports long file names. That is on Windows
+    95, 98, XP, Vista, or 7. Or run DJGPP in DOSBox-X (https://dosbox-x.com/)
+    with DOS version 7.0 or 7.1. You need to unpack the dos2unix source zip
+    package with long file names. E.g. with a Windows version of unzip. The file
+    names should not be chopped to 8.3 length.
+
     Cross compilation with djgpp.mak works out-of-the-box in Cygwin if
-    you have djgpp-gcc-core installed. On Linux you can add CROSS_COMP=1
-    to the command line.
+    you have djgpp-gcc-core installed:
+
+        make -f djgpp.mak
+
+    On Linux you can add CROSS_COMP=1 to the command line:
+
+        make -f djgpp.mak CROSS_COMP=1
 
 
     Or use Open Watcom
